@@ -38,12 +38,12 @@ if(isset($_SESSION['user'])==false){
                     <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" style="color: red;" href="#!"><b><?php if(isset($_SESSION['user'])){ $user = $_SESSION['user']; echo $user->firstname.' '.$user->lastname; } ?></b>
-                        <img style="width: 40px; height: 40px; border-radius: 20px/20px;" src="https://scontent.fdad3-1.fna.fbcdn.net/v/t39.30808-6/318606597_887089289131097_9086032737232620647_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=174925&_nc_ohc=mupi_8YGYmcAX-vEkJS&_nc_ht=scontent.fdad3-1.fna&oh=00_AfCg3kNkzCgXHTUA4gZ-JcZgHaUU20TM5OjiC9Sn5vBiOw&oe=63E5D7F4" alt="">
+                        <img style="width: 40px; height: 40px; border-radius: 20px/20px;" src="http://localhost/module3/MVC-Casestudy/public/uploads/<?php echo $user->image;?>" alt="">
                     </a></li>
-                        <li><a class="dropdown-item" href="#!">Settings</a></li>
-                        <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                        <li><a class="dropdown-item" href="#!">Cài đặt</a></li>
+                        <li><a class="dropdown-item" href="#!">Hoạt động đăng nhập</a></li>
                         <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="http://localhost/module3/MVC-Casestudy/views/logins/logout.php">Logout</a></li>
+                        <li><a class="dropdown-item" href="http://localhost/module3/MVC-Casestudy/views/logins/logout.php">Đăng xuất</a></li>
                     </ul>
                 </li>
             </ul>

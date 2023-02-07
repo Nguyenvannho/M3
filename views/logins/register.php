@@ -121,7 +121,7 @@ margin-left: 4px;
 				
 			</div>
 			<div class="card-body">
-				<form action="register_query.php" method="POST">
+				<form action="register_query.php" method="POST" enctype="multipart/form-data">
 
                 <div class="input-group form-group">
 						<div class="input-group-prepend">
@@ -161,6 +161,7 @@ margin-left: 4px;
 						</div>
 						<input type="password" name="password" class="form-control" placeholder="Mật Khẩu">
 					</div><br>
+					
 					<div class="form-group">
 					<button type="submit" class="btn float-right login_btn">Đăng ký</button>
 				</div>

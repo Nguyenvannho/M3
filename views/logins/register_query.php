@@ -15,7 +15,7 @@
 				$div = explode('.',$img);
 				$file_ext = strtolower(end($div));
 				$image= $div[0].time().'.'.$file_ext;
-				$path_uploads="public/uploads/".$image;
+				$path_uploads="../../public/uploads/".$image;
 				move_uploaded_file($tmp_img,$path_uploads);
 				// md5 encrypted
 				// $password = md5($_POST['password']);
@@ -32,7 +32,7 @@
 			header('location:index.php');
 		}else{
 			echo "
-				<script>alert('Please fill up the required field!')</script>
+				<script>alert('Vui lòng nhập tài khoản và mật khẩu!')</script>
 				<script>window.location = 'registration.php'</script>
 			";
 		}
